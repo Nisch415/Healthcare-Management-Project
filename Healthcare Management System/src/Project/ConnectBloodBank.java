@@ -6,7 +6,7 @@ public class ConnectBloodBank {
 	{
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/bbank","root","projpass04");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/bbank","root","**********");
 			return con;
 		}
 		catch(Exception e)

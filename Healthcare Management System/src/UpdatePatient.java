@@ -7,6 +7,8 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import java.awt.Font;
+import java.awt.Image;
+
 import javax.swing.SwingConstants;
 import javax.swing.JTextArea;
 import javax.swing.JButton;
@@ -236,8 +238,9 @@ public class UpdatePatient extends JFrame {
 		btnNewButton_1_1.setBounds(581, 438, 106, 36);
 		contentPane.add(btnNewButton_1_1);
 		
-		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\NISCHALA R\\Desktop\\java\\Healthcare Management System\\images\\JFrameimg.jpg"));
+		Image img = new ImageIcon(this.getClass().getResource("/JFrameimg.jpg")).getImage();
+		JLabel lblNewLabel_1 = new JLabel();
+		lblNewLabel_1.setIcon(new ImageIcon(img));
 		lblNewLabel_1.setBounds(0, 0, 785, 524);
 		contentPane.add(lblNewLabel_1);
 	}

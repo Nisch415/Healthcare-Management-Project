@@ -9,6 +9,8 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 import java.awt.Font;
+import java.awt.Image;
+
 import javax.swing.SwingConstants;
 import javax.swing.JSeparator;
 import javax.swing.JTextField;
@@ -156,8 +158,9 @@ public class SearchByLocation extends JFrame {
 		btnClose.setBounds(478, 417, 97, 37);
 		contentPane.add(btnClose);
 		
-		JLabel lblNewLabel_2 = new JLabel("");
-		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\NISCHALA R\\Desktop\\java\\Healthcare Management System\\images\\BloodBankJFrame.png"));
+		Image img = new ImageIcon(this.getClass().getResource("/BloodBankJFrame.png")).getImage();
+		JLabel lblNewLabel_2 = new JLabel();
+		lblNewLabel_2.setIcon(new ImageIcon(img));
 		lblNewLabel_2.setBounds(0, 0, 780, 491);
 		contentPane.add(lblNewLabel_2);
 		setLocationRelativeTo(null);

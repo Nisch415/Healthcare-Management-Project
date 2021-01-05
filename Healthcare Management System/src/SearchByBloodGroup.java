@@ -9,6 +9,8 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import java.awt.Font;
+import java.awt.Image;
+
 import javax.swing.JSeparator;
 import javax.swing.JTextField;
 import javax.swing.JScrollPane;
@@ -157,8 +159,9 @@ public class SearchByBloodGroup extends JFrame {
 		btnClose.setBounds(455, 409, 98, 29);
 		contentPane.add(btnClose);
 		
-		JLabel lblNewLabel_2 = new JLabel("");
-		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\NISCHALA R\\Desktop\\java\\Healthcare Management System\\images\\BloodBankJFrame.png"));
+		Image img = new ImageIcon(this.getClass().getResource("/BloodBankJFrame.png")).getImage();
+		JLabel lblNewLabel_2 = new JLabel();
+		lblNewLabel_2.setIcon(new ImageIcon(img));
 		lblNewLabel_2.setBounds(0, -11, 780, 506);
 		contentPane.add(lblNewLabel_2);
 	}

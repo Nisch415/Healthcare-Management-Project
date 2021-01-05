@@ -10,6 +10,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
 import javax.swing.ImageIcon;
 import java.awt.Font;
+import java.awt.Image;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JLabel;
@@ -165,8 +166,9 @@ public class home extends JFrame {
 		txtrCovidSafetyhealthyathome.setBounds(485, 203, 483, 378);
 		contentPane.add(txtrCovidSafetyhealthyathome);
 		
+		Image img = new ImageIcon(this.getClass().getResource("/HomePage.png")).getImage();
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\NISCHALA R\\Desktop\\java\\Healthcare Management System\\images\\HomePage.png"));
+		lblNewLabel.setIcon(new ImageIcon(img));
 		lblNewLabel.setBounds(0, 0, 1599, 885);
 		contentPane.add(lblNewLabel);
 	}

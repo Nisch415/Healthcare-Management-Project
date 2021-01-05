@@ -9,6 +9,8 @@ import javax.swing.JOptionPane;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.awt.Font;
+import java.awt.Image;
+
 import javax.swing.SwingConstants;
 import javax.swing.JSeparator;
 import javax.swing.JTextField;
@@ -296,9 +298,10 @@ public class AddNewDonor extends JFrame {
 		btnNewButton_2.setBounds(579, 410, 85, 31);
 		contentPane.add(btnNewButton_2);
 		
-		JLabel lblNewLabel_4 = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/BloodBankJFrame.png")).getImage();
+		JLabel lblNewLabel_4 = new JLabel();
 		lblNewLabel_4.setBackground(SystemColor.menu);
-		lblNewLabel_4.setIcon(new ImageIcon("C:\\Users\\NISCHALA R\\Desktop\\java\\Healthcare Management System\\images\\BloodBankJFrame.png"));
+		lblNewLabel_4.setIcon(new ImageIcon(img));
 		lblNewLabel_4.setBounds(0, 0, 782, 501);
 		contentPane.add(lblNewLabel_4);
 	}

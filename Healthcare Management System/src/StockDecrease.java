@@ -9,6 +9,8 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import java.awt.Font;
+import java.awt.Image;
+
 import javax.swing.JSeparator;
 import javax.swing.JComboBox;
 import javax.swing.JTextField;
@@ -193,8 +195,9 @@ public class StockDecrease extends JFrame {
 		btnNewButton_2.setBounds(465, 414, 96, 27);
 		contentPane.add(btnNewButton_2);
 		
-		JLabel lblNewLabel_3 = new JLabel("");
-		lblNewLabel_3.setIcon(new ImageIcon("C:\\Users\\NISCHALA R\\Desktop\\java\\Healthcare Management System\\images\\BloodBankJFrame.png"));
+		Image img = new ImageIcon(this.getClass().getResource("/BloodBankJFrame.png")).getImage();
+		JLabel lblNewLabel_3 = new JLabel();
+		lblNewLabel_3.setIcon(new ImageIcon(img));
 		lblNewLabel_3.setBounds(0, 0, 779, 495);
 		contentPane.add(lblNewLabel_3);
 		setLocationRelativeTo(null);

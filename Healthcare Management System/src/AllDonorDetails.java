@@ -9,6 +9,8 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 import java.awt.Font;
+import java.awt.Image;
+
 import javax.swing.JSeparator;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
@@ -140,7 +142,8 @@ public class AllDonorDetails extends JFrame {
 		btnNewButton_1.setBounds(561, 422, 85, 32);
 		contentPane.add(btnNewButton_1);
 		
-		JLabel lblNewLabel_1 = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/BloodBankJFrame.png")).getImage();
+		JLabel lblNewLabel_1 = new JLabel();
 		lblNewLabel_1.addComponentListener(new ComponentAdapter() {
 			@Override
 			public void componentShown(ComponentEvent e) {
@@ -148,7 +151,7 @@ public class AllDonorDetails extends JFrame {
 				
 			}
 		});
-		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\NISCHALA R\\Desktop\\java\\Healthcare Management System\\images\\BloodBankJFrame.png"));
+		lblNewLabel_1.setIcon(new ImageIcon(img));
 		lblNewLabel_1.setBounds(0, 0, 780, 491);
 		contentPane.add(lblNewLabel_1);
 	}

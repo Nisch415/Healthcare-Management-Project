@@ -12,6 +12,7 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.JButton;
 import java.awt.Font;
+import java.awt.Image;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
@@ -120,8 +121,9 @@ public class PatientHistory extends JFrame {
 		lblNewLabel.setBounds(257, 21, 264, 38);
 		contentPane.add(lblNewLabel);
 		
-		JLabel lblNewLabel_1 = new JLabel("New label");
-		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\NISCHALA R\\Desktop\\java\\Healthcare Management System\\images\\JFrameimg.jpg"));
+		Image img = new ImageIcon(this.getClass().getResource("/JFrameimg.jpg")).getImage();
+		JLabel lblNewLabel_1 = new JLabel();
+		lblNewLabel_1.setIcon(new ImageIcon(img));
 		lblNewLabel_1.setBounds(0, 0, 800, 475);
 		contentPane.add(lblNewLabel_1);
 	}

@@ -7,6 +7,8 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 import java.awt.Font;
+import java.awt.Image;
+
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 import javax.swing.SwingConstants;
@@ -102,9 +104,12 @@ public class login extends JFrame {
 				
 			}
 		});
-		btnNewButton.setIcon(new ImageIcon("C:\\Users\\NISCHALA R\\Desktop\\java\\Healthcare Management System\\images\\Accept-icon.png"));
+		Image img1 = new ImageIcon(this.getClass().getResource("/Accept-icon.png")).getImage();
+		btnNewButton.setIcon(new ImageIcon(img1));
+		
+		//btnNewButton.setIcon(null);
 		btnNewButton.setFont(new Font("Lucida Sans", Font.BOLD, 24));
-		btnNewButton.setBounds(671, 484, 145, 40);
+		btnNewButton.setBounds(705, 484, 145, 40);
 		contentPane.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("Exit");
@@ -115,13 +120,16 @@ public class login extends JFrame {
 					System.exit(0);
 			}
 		});
-		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\NISCHALA R\\Desktop\\java\\Healthcare Management System\\images\\Button-Close-icon.png"));
+		
+		Image img11 = new ImageIcon(this.getClass().getResource("/Button-Close-icon.png")).getImage();
+		btnNewButton_1.setIcon(new ImageIcon(img11));
 		btnNewButton_1.setFont(new Font("Lucida Sans", Font.BOLD, 24));
 		btnNewButton_1.setBounds(929, 484, 145, 40);
 		contentPane.add(btnNewButton_1);
 		
-		JLabel lblNewLabel_2 = new JLabel("");
-		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\NISCHALA R\\Downloads\\586e824b-0aa9-46c3-aa06-c6b0bc67eb90.JPG"));
+		Image img2 = new ImageIcon(this.getClass().getResource("/admin-icon.png")).getImage();
+		JLabel lblNewLabel_2 = new JLabel();
+		lblNewLabel_2.setIcon(new ImageIcon(img2));
 		lblNewLabel_2.setBounds(36, 24, 151, 174);
 		contentPane.add(lblNewLabel_2);
 		
@@ -137,8 +145,9 @@ public class login extends JFrame {
 		lblNewLabel_5.setBounds(652, 103, 217, 55);
 		contentPane.add(lblNewLabel_5);
 		
-		JLabel lblNewLabel_3 = new JLabel("");
-		lblNewLabel_3.setIcon(new ImageIcon("C:\\Users\\NISCHALA R\\Desktop\\java\\Healthcare Management System\\images\\FinalLogin.png"));
+		Image img111 = new ImageIcon(this.getClass().getResource("/FinalLogin.png")).getImage();
+		JLabel lblNewLabel_3 = new JLabel();
+		lblNewLabel_3.setIcon(new ImageIcon(img111));
 		lblNewLabel_3.setBounds(0, 0, 1581, 838);
 		contentPane.add(lblNewLabel_3);
 	}

@@ -9,6 +9,7 @@ import javax.swing.SwingConstants;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.Font;
+import java.awt.Image;
 import java.awt.Color;
 import javax.swing.JTable;
 import javax.swing.border.LineBorder;
@@ -36,7 +37,8 @@ public int flag = 0;
 	private JPanel contentPane;
 	private JTextField textField;
 	private JTable table;
-	private final JLabel lblNewLabel_5 = new JLabel("");
+	
+	
 
 	/**
 	 * Launch the application.
@@ -275,9 +277,17 @@ public int flag = 0;
 		btnNewButton_1.setFont(new Font("Lucida Sans", Font.BOLD, 22));
 		btnNewButton_1.setBounds(211, 449, 106, 32);
 		contentPane.add(btnNewButton_1);
-		lblNewLabel_5.setIcon(new ImageIcon("C:\\Users\\NISCHALA R\\Desktop\\java\\Healthcare Management System\\images\\JFrameimg.jpg"));
+		
+		JLabel lblNewLabel_5 = new JLabel("");
 		lblNewLabel_5.setBounds(0, 0, 787, 500);
 		contentPane.add(lblNewLabel_5);
+		Image img = new ImageIcon(this.getClass().getResource("/JFrameimg.jpg")).getImage();
+		lblNewLabel_5.setIcon(new ImageIcon());
+		lblNewLabel_5.setIcon(new ImageIcon(img));
+		lblNewLabel_5.setBounds(0, 0, 787, 500);
+		contentPane.add(lblNewLabel_5);
+		
+		
 		setLocationRelativeTo(null);
 		setUndecorated(true);
 		

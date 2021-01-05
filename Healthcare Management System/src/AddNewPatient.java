@@ -5,6 +5,7 @@ import Project.ConnectionProvider;
 
 import javax.swing.JButton;
 import java.awt.Font;
+import java.awt.Image;
 import java.awt.event.ActionListener;
 import java.sql.Connection;
 import java.sql.Statement;
@@ -203,8 +204,9 @@ public class AddNewPatient extends JFrame {
 		btnNewButton_1.setFont(new Font("Lucida Sans", Font.BOLD, 24));
 		getContentPane().add(btnNewButton_1);
 		
-		JLabel lblNewLabel_8 = new JLabel("");
-		lblNewLabel_8.setIcon(new ImageIcon("C:\\Users\\NISCHALA R\\Desktop\\java\\Healthcare Management System\\images\\JFrameimg.jpg"));
+		Image img = new ImageIcon(this.getClass().getResource("/JFrameimg.jpg")).getImage();
+		JLabel lblNewLabel_8 = new JLabel();
+		lblNewLabel_8.setIcon(new ImageIcon(img));
 		lblNewLabel_8.setBounds(0, 0, 800, 500);
 		getContentPane().add(lblNewLabel_8);
 	}

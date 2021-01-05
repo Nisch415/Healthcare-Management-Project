@@ -7,6 +7,8 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 import java.awt.Font;
+import java.awt.Image;
+
 import javax.swing.SwingConstants;
 import javax.swing.JSeparator;
 import javax.swing.JTextField;
@@ -299,8 +301,9 @@ public class DeleteDonor extends JFrame {
 		btnNewButton_3.setBounds(520, 407, 101, 27);
 		contentPane.add(btnNewButton_3);
 		
-		JLabel lblNewLabel_12 = new JLabel("");
-		lblNewLabel_12.setIcon(new ImageIcon("C:\\Users\\NISCHALA R\\Desktop\\java\\Healthcare Management System\\images\\BloodBankJFrame.png"));
+		Image img = new ImageIcon(this.getClass().getResource("/BloodBankJFrame.png")).getImage();
+		JLabel lblNewLabel_12 = new JLabel();
+		lblNewLabel_12.setIcon(new ImageIcon(img));
 		lblNewLabel_12.setBounds(0, 0, 766, 493);
 		contentPane.add(lblNewLabel_12);
 		setLocationRelativeTo(null);

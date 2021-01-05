@@ -7,6 +7,8 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 import java.awt.Font;
+import java.awt.Image;
+
 import javax.swing.JSeparator;
 import javax.swing.SwingConstants;
 import javax.swing.JTextField;
@@ -303,9 +305,9 @@ public class UpdateDonor extends JFrame {
 		btnNewButton_1_2.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 17));
 		btnNewButton_1_2.setBounds(561, 424, 90, 32);
 		contentPane.add(btnNewButton_1_2);
-		
-		JLabel lblNewLabel_12 = new JLabel("");
-		lblNewLabel_12.setIcon(new ImageIcon("C:\\Users\\NISCHALA R\\Desktop\\java\\Healthcare Management System\\images\\BloodBankJFrame.png"));
+		Image img = new ImageIcon(this.getClass().getResource("/BloodBankJFrame.png")).getImage();
+		JLabel lblNewLabel_12 = new JLabel();
+		lblNewLabel_12.setIcon(new ImageIcon(img));
 		lblNewLabel_12.setBounds(0, 0, 781, 496);
 		contentPane.add(lblNewLabel_12);
 	}

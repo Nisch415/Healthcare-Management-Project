@@ -7,6 +7,7 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="images"/>
+	<classpathentry kind="src" path="Resources"/>
 	<classpathentry kind="lib" path="C:/Users/NISCHALA R/Desktop/rs2xml/rs2xml/rs2xml.jar"/>
 	<classpathentry kind="lib" path="C:/Users/NISCHALA R/Desktop/mysql-connector-java-8.0.22/mysql-connector-java-8.0.22.jar"/>
 	<classpathentry kind="lib" path="C:/Users/NISCHALA R/Desktop/jcalendar-1.4.jar"/>

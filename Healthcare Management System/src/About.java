@@ -6,6 +6,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import javax.swing.ImageIcon;
 import java.awt.Font;
+import java.awt.Image;
 import java.awt.Color;
 import javax.swing.JTextArea;
 import javax.swing.JButton;
@@ -49,8 +50,9 @@ public class About extends JFrame {
 		setLocationRelativeTo(null);
 		setUndecorated(true);
 		
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\NISCHALA R\\Desktop\\aboutImg.jpeg"));
+		Image img = new ImageIcon(this.getClass().getResource("/AboutImage.jpeg")).getImage();
+		JLabel lblNewLabel = new JLabel();
+		lblNewLabel.setIcon(new ImageIcon(img));
 		lblNewLabel.setBounds(193, 0, 566, 141);
 		contentPane.add(lblNewLabel);
 		
@@ -61,8 +63,9 @@ public class About extends JFrame {
 		lblNewLabel_2.setBounds(20, 53, 163, 34);
 		contentPane.add(lblNewLabel_2);
 		
+		Image img1 = new ImageIcon(this.getClass().getResource("/WhoWeArebg.png")).getImage();
 		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\NISCHALA R\\Desktop\\pink.png"));
+		lblNewLabel_1.setIcon(new ImageIcon(img1));
 		lblNewLabel_1.setBounds(0, 22, 193, 103);
 		contentPane.add(lblNewLabel_1);
 		

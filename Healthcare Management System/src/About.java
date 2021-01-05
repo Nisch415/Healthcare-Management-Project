@@ -64,7 +64,7 @@ public class About extends JFrame {
 		contentPane.add(lblNewLabel_2);
 		
 		Image img1 = new ImageIcon(this.getClass().getResource("/WhoWeArebg.png")).getImage();
-		JLabel lblNewLabel_1 = new JLabel("");
+		JLabel lblNewLabel_1 = new JLabel();
 		lblNewLabel_1.setIcon(new ImageIcon(img1));
 		lblNewLabel_1.setBounds(0, 22, 193, 103);
 		contentPane.add(lblNewLabel_1);

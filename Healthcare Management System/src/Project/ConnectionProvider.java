@@ -10,7 +10,7 @@ public class ConnectionProvider
 		try
 		{
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con =  DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","projpass04");
+			Connection con =  DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","**********");
 			return con;
 		}
 		catch(Exception e)

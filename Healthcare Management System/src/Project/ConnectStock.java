@@ -6,7 +6,7 @@ public class ConnectStock {
 	{
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StockUnits","root","projpass04");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/StockUnits","root","**********");
 			return con;
 		}
 		catch(Exception e)
